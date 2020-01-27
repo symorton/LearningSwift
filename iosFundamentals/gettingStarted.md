@@ -75,3 +75,24 @@ Data Source
 Delegate
 * Provides methods to interact, change appearance
 
+## Tips
+
+* Reuse cells when there are a lot to save memory by calling: 
+
+```
+// in tableView returning cell to use
+tableView.dequeueReusableCell(withIdentifier: "normalCell", for: indexPath)
+```
+
+** must add a UITableViewCell to story board in order to get Identifier for cell type.
+
+Standard Table View Cell Properties
+* imageView
+* textLabel
+* accessoryType
+    * .disclosureIndicator
+    * .checkMark
+* detailTextLabel
+
+
+
